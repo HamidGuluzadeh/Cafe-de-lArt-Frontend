@@ -19,6 +19,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    border-bottom: 3px solid rgb(63, 40, 3);
 }
 
 #logo {
@@ -71,4 +72,85 @@ header {
     font-size: 40px;
     font-weight: 400;
     margin-top: 10px;
+}
+
+.signature-foods {
+    padding: 60px 60px;
+    margin-top: 10px;
+}
+
+.signature-foods .title {
+    color: rgb(90, 39, 0);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.signature-foods .subtitle {
+    color: rgb(44, 19, 0);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.signature-foods .cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 70px;
+    margin-top: 50px;
+}
+
+.signature-foods .card {
+    width: 33%;
+    height: 100%;
+    background-color: #F4EBE1;
+    border-radius: 25px;
+}
+
+.signature-foods .card:hover {
+    position: relative;
+    bottom: 10px;
+}
+
+.signature-foods .item-img {
+    position: relative;
+}
+
+.signature-foods .main-img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.signature-foods .premium-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.signature-foods .item-details {
+    padding: 0 25px 30px 25px;
+}
+
+.signature-foods .item-details h3 {
+    color: #3E2723;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.signature-foods .item-details p {
+    margin-top: 5px;
+    color: #5D4037;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.signature-foods .item-details .price {
+    margin-top: 25px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #A66D27;
 }
