@@ -16,6 +16,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #logo {
@@ -32,7 +35,7 @@ header {
     gap: 70px;
     justify-content: center;
     position: relative;
-    right: 100px;
+    right: 50px;
     font-size: 20px;
     font-weight: 400;
 }
@@ -48,4 +51,24 @@ header {
 
 .menu .btn:hover {
     color: rgb(130, 84, 9);
+}
+
+.hero-img img {
+    width: 100%;
+    position: relative;
+}
+
+.hero-slogan {
+    position: absolute;
+    top: 42%;
+    left: 21%;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+.hero-slogan p {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 10px;
 }
