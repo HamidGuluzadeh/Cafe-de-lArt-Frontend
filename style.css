@@ -121,6 +121,7 @@ header {
     height: 100%;
     background-color: #F4EBE1;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .signature-foods .card:hover {
