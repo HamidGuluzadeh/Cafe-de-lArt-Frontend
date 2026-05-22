@@ -129,8 +129,8 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 4%;
-    margin-top: 50px;
+    gap: 40px 4%;
+    margin-top: 30px;
     flex-wrap: wrap;
 }
 
@@ -157,7 +157,7 @@ header {
     border-radius: 25px;
 }
 
-.signature-foods .premium-icon {
+.foods .premium-icon, .signature-foods .premium-icon {
     width: 32px;
     height: 32px;
     position: absolute;
@@ -187,6 +187,15 @@ header {
     font-weight: 800;
     font-size: 30px;
     color: #A66D27;
+}
+
+.category-title {
+    color: rgb(90, 39, 0);
+    font-size: 37px;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 35px; 
+    margin-bottom: 0;
 }
 
 .story-title {
