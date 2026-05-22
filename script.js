@@ -1,5 +1,6 @@
 const hotDrinkCards = document.querySelector(".hot-drinks .cards");
 const dessertCards = document.querySelector(".desserts .cards");
+const headerButtons = document.querySelectorAll(".menu .btn");
 
 fetch(`https://api.jsonbin.io/v3/b/6a0ffb0c6877513b27b2ab20/latest`, {
     headers: {
@@ -52,4 +53,16 @@ fetch(`https://api.jsonbin.io/v3/b/6a0ffb0c6877513b27b2ab20/latest`, {
 })
 .catch((error) => {
     console.error("Error: ", error);
+});
+
+headerButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        const buttonText = event.target.innerText;
+
+        if (buttonText == "HOME") {
+            window.location.href = "index.html";
+        } else if (buttonText == "MENU") {
+            window.location.href = "menu.html";
+        }
+    });
 });
