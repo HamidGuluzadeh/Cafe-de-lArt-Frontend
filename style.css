@@ -107,25 +107,25 @@ header {
     font-weight: 400;
 }
 
-.signature-foods, .story, footer {
+.foods, .signature-foods, .story, footer {
     padding: 60px 60px;
     margin-top: 10px;
 }
 
-.signature-foods .title {
+.foods .title, .signature-foods .title {
     color: rgb(90, 39, 0);
     font-size: 50px;
     font-weight: 800;
 }
 
-.signature-foods .subtitle {
+.foods .subtitle, .signature-foods .subtitle {
     color: rgb(44, 19, 0);
     font-size: 20px;
     font-weight: 500;
     margin-top: 5px;
 }
 
-.signature-foods .cards {
+.foods .cards, .signature-foods .cards {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -134,23 +134,23 @@ header {
     flex-wrap: wrap;
 }
 
-.signature-foods .card {
+.foods .card, .signature-foods .card {
     width: 30%;
     background-color: #F4EBE1;
     border-radius: 25px;
     cursor: pointer;
 }
 
-.signature-foods .card:hover {
+.foods .card:hover, .signature-foods .card:hover {
     position: relative;
     bottom: 10px;
 }
 
-.signature-foods .item-img {
+.foods .item-img, .signature-foods .item-img {
     position: relative;
 }
 
-.signature-foods .main-img {
+.foods .main-img, .signature-foods .main-img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
@@ -165,24 +165,24 @@ header {
     left: 18px;
 }
 
-.signature-foods .item-details {
+.foods .item-details, .signature-foods .item-details {
     padding: 0 25px 30px 25px;
 }
 
-.signature-foods .item-details h3 {
+.foods .item-details h3, .signature-foods .item-details h3 {
     color: #3E2723;
     font-weight: 900;
     font-size: 25px;
 }
 
-.signature-foods .item-details p {
+.foods .item-details p, .signature-foods .item-details p {
     margin-top: 5px;
     color: #5D4037;
     font-weight: 500;
     font-size: 18px;
 }
 
-.signature-foods .item-details .price {
+ .foods .item-details .price, .signature-foods .item-details .price {
     margin-top: 25px;
     font-weight: 800;
     font-size: 30px;
@@ -331,7 +331,7 @@ footer {
         max-width: 200px;
     }
 
-    .signature-foods, .story, footer {
+    .foods, .signature-foods, .story, footer {
         padding: 40px 3vw;
     }
 
@@ -358,27 +358,27 @@ footer {
         font-size: 20px; 
     }
 
-    .signature-foods .title, .story-title { 
+    .foods .title, .signature-foods .title, .story-title { 
         font-size: 38px; 
     }
 
-    .signature-foods .subtitle, .story-subtitle { 
+    .foods .subtitle, .signature-foods .subtitle, .story-subtitle { 
         font-size: 18px; 
     }
 
-    .signature-foods .item-details { 
+    .foods .item-details, .signature-foods .item-details { 
         padding: 15px; 
     }
 
-    .signature-foods .item-details h3 { 
+    .foods .item-details h3, .signature-foods .item-details h3 { 
         font-size: 18px; 
     }
 
-    .signature-foods .item-details p { 
+    .foods .item-details p, .signature-foods .item-details p { 
         font-size: 13px; 
     }
 
-    .signature-foods .item-details .price { 
+    .foods .item-details .price, .signature-foods .item-details .price { 
         font-size: 22px; 
         margin-top: 15px; 
     }
@@ -480,29 +480,29 @@ footer {
         font-size: 16px; 
     }
 
-    .signature-foods, .story, footer { 
+    .foods, .signature-foods, .story, footer { 
         padding: 30px 5vw; 
     }
 
-    .signature-foods .title, .story-title { 
+    .foods .title, .signature-foods .title, .story-title { 
         font-size: 32px; 
     }
 
-    .signature-foods .subtitle, .story-subtitle { 
+    .foods .subtitle, .signature-foods .subtitle, .story-subtitle { 
         font-size: 15px; 
     }
 
-    .signature-foods .cards {
+    .foods .cards, .signature-foods .cards {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
 
-    .signature-foods .card { 
+    .foods .card, .signature-foods .card { 
         width: 100%; 
     }
 
-    .signature-foods .main-img {
+    .foods .main-img, .signature-foods .main-img {
         margin-bottom: 0;
     }
 
