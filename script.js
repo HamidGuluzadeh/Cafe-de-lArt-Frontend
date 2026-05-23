@@ -1,12 +1,28 @@
-const hotDrinkCards = document.querySelector(".hot-drinks .cards");
-const dessertCards = document.querySelector(".desserts .cards");
 const headerButtons = document.querySelectorAll(".menu .btn");
+const dataLoad = document.querySelector(".data-load");
+const foodsArea = document.querySelector(".food-menu .foods");
 
 fetch(`https://api.jsonbin.io/v3/b/6a11fd106610dd3ae89404ab/latest`)
 .then(response => response.json())
 .then(data => {
-    hotDrinkCards.innerHTML = '';
-    dessertCards.innerHTML = '';
+    dataLoad.remove();
+
+    foodsArea.innerHTML +=
+    `<div class="hot-drinks">
+        <h3 class="category-title">Hot Drinks</h3>
+        <div class="cards">
+                        
+        </div>
+    </div>
+    <div class="desserts">
+        <h3 class="category-title">Desserts</h3>
+        <div class="cards">
+
+        </div>
+    </div>`;
+
+    const hotDrinkCards = document.querySelector(".hot-drinks .cards");
+    const dessertCards = document.querySelector(".desserts .cards");
 
     const hotDrinksData = data.record.hotDrinks;
     const dessertsData = data.record.desserts;
