@@ -2,11 +2,7 @@ const hotDrinkCards = document.querySelector(".hot-drinks .cards");
 const dessertCards = document.querySelector(".desserts .cards");
 const headerButtons = document.querySelectorAll(".menu .btn");
 
-fetch(`https://api.jsonbin.io/v3/b/6a0ffb0c6877513b27b2ab20/latest`, {
-    headers: {
-        "X-Master-Key": '$2a$10$RTZJeLd9/zm0EQ.sAzlgpelkcGl6JnwF3J9zpxxVP1rfRrYnhkzYm'
-    }
-})
+fetch(`https://api.jsonbin.io/v3/b/6a11fd106610dd3ae89404ab/latest`)
 .then(response => response.json())
 .then(data => {
     hotDrinkCards.innerHTML = '';
@@ -63,6 +59,8 @@ headerButtons.forEach((button) => {
             window.location.href = "index.html";
         } else if (buttonText == "MENU") {
             window.location.href = "menu.html";
+        } else if (buttonText == "RESERVE") {
+            window.location.href = "reservation.html";
         }
     });
 });

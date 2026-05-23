@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Café de l'Art - Menu</title>
+        <title>Café de l'Art - Reservation</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="./icons/title-logo-icon.png">
+            <link rel="icon" type="image/png" href="./icons/title-logo-icon.png">
     </head>
     <body>
         <header>
@@ -30,23 +30,62 @@
             </div>
         </header>
         <main>
-            <section class="food-menu">
-                <div class="foods">
-                    <h2 class="title">Our Menu</h2>
-                    <p class="subtitle">Explore our carefully crafted selection of coffees and desserts</p>
-                    <div class="hot-drinks">
-                        <h3 class="category-title">Hot Drinks</h3>
-                        <div class="cards">
-                        
-                        </div>
-                    </div>
-                    <div class="desserts">
-                        <h3 class="category-title">Desserts</h3>
-                        <div class="cards">
-
-                        </div>
-                    </div>
+            <section class="banner">
+                <div class="banner-img">
+                    <img src="./images/interior.png" alt="Interior">
                 </div>
+            </section>
+            <section class="reservation-form">
+                <form>
+                    <label for="first-name">
+                        First Name:
+                        <input type="text" placeholder="Your name" name="first-name" required>
+                        <div class="error-msg" id="first-name-error"></div>
+                    </label>
+                    <label for="last-name">
+                        Last Name:
+                        <input type="text" placeholder="Your surname" name="last-name" required>
+                        <div class="error-msg" id="last-name-error"></div>
+                    </label>
+                    <label for="phone">
+                        Phone Number:
+                        <input type="tel" placeholder="+994 XX XXX XX XX" name="phone" required>
+                        <div class="error-msg" id="phone-error"></div>
+                    </label>
+                    <label for="reserve-date">
+                        Date:
+                        <input type="date" name="reserve-date" required>
+                        <div class="error-msg" id="date-error"></div>
+                    </label>
+                    <label for="reserve-time">
+                        Time:
+                        <input type="time" name="reserve-time" required>
+                        <div class="error-msg" id="date-error"></div>
+                    </label>
+                    <label for="table">
+                        Table:
+                        <select name="table">
+                            <option value="select" disabled selected>Select table</option>
+                            <option value="1">Table №1</option>
+                            <option value="2">Table №2</option>
+                            <option value="3">Table №3</option>
+                            <option value="4">Table №4</option>
+                            <option value="5">Table №5</option>
+                            <option value="6">Table №6</option>
+                        </select>
+                    </label>
+                    <label for="guest">
+                        Guests:
+                        <select name="guest" required>
+                            <option value="select" disabled selected>Select person count</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                        </select>
+                    </label>
+                    <button type="submit">CONFIRM</button>
+                </form>
             </section>
         </main>
         <footer>
