@@ -82,6 +82,23 @@ header {
     cursor: pointer;
 }
 
+.offline {
+    width: 100%;
+    background-color: rgb(251, 179, 45);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 20px;
+    border-top: 3px solid black;
+    border-bottom: 4px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
 .hero-img {
     position: relative;
     width: 100%;
@@ -368,6 +385,17 @@ footer {
         height: 35px;
     }
 
+    .offline {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 18px;
+        border-top: 3px solid black;
+        border-bottom: 4px solid black;
+    }
+
     .hero-slogan h1 { 
         font-size: 60px;
     }
@@ -470,6 +498,17 @@ footer {
         height: 35px;
         font-size: 13px;
         margin: 0;
+    }
+
+    .offline {
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
     }
 
     .menu {

@@ -1,6 +1,7 @@
 const headerButtons = document.querySelectorAll(".menu .btn");
 const dataLoad = document.querySelector(".data-load");
 const foodsArea = document.querySelector(".food-menu .foods");
+const connectionArea = document.querySelector(".offline");
 
 fetch(`https://api.jsonbin.io/v3/b/6a11fd106610dd3ae89404ab/latest`)
 .then(response => response.json())
@@ -79,4 +80,12 @@ headerButtons.forEach((button) => {
             window.location.href = "reservation.html";
         }
     });
+});
+
+window.addEventListener("offline", () => {
+    connectionArea.classList.remove("hidden");
+});
+
+window.addEventListener("online", () => {
+    connectionArea.classList.add("hidden");
 });
