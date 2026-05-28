@@ -89,10 +89,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 20px;
     border-top: 3px solid black;
     border-bottom: 4px solid black;
+    position: fixed;
+    top: 90px;
+    z-index: 1;
 }
 
 .hidden {
@@ -356,6 +359,41 @@ footer {
     margin-bottom: 15px;
 }
 
+.banner-img {
+    width: 100%;
+    position: relative;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.banner-slogan {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-slogan h1 {
+    font-size: 65px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.banner-slogan p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
 @media (max-width: 990px) {
     header {
         padding: 15px 3vw;
@@ -385,12 +423,12 @@ footer {
         height: 35px;
     }
 
+    .hidden {
+        display: none;
+    }
+
     .offline {
         height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 800;
         font-size: 18px;
         border-top: 3px solid black;
         border-bottom: 4px solid black;
@@ -468,6 +506,18 @@ footer {
         gap: 8px; 
         margin-bottom: 12px; 
     }
+
+    .banner-slogan {
+        top: -17%;
+    }
+
+    .banner-slogan h1 { 
+        font-size: 37px; 
+    }
+
+    .banner-slogan p { 
+        font-size: 15px; 
+    }
 }
 
 @media (max-width: 600px) {
@@ -502,10 +552,6 @@ footer {
 
     .offline {
         height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 700;
         font-size: 14px;
         border-top: 3px solid black;
         border-bottom: 3px solid black;
@@ -595,5 +641,18 @@ footer {
 
     .location, .phone, .email, .social { 
         justify-content: center; 
+    }
+
+    .banner-slogan {
+        top: -25%;
+    }
+
+    .banner-slogan h1 { 
+        font-size: 25px; 
+    }
+
+    .banner-slogan p { 
+        font-size: 12px; 
+        padding: 0 15px; 
     }
 }
