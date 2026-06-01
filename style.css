@@ -401,6 +401,13 @@ footer {
     margin-bottom: 20px;
 }
 
+.reservation-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
 .reservation-form h2 {
     font-size: 30px;
     font-weight: 800;
@@ -412,11 +419,11 @@ footer {
     width: 70%;
     margin: auto;
     margin-bottom: 35px;
-    border: 1px solid rgb(61, 28, 3);
+    border: 1px dashed rgb(61, 28, 3);
 }
 
 .reservation-form form {
-    width: 70%;
+    width: 65%;
     max-width: 800px;
     background-color: #F4EBE1;
     padding: 50px 50px 40px 50px;
@@ -439,7 +446,7 @@ footer {
     width: 100%;
     padding: 14px;
     border: 2px solid #D7CCC8;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 15px;
     color: #3E2723;
     background-color: white;
@@ -448,24 +455,46 @@ footer {
 
 .error-msg {
     color: #D32F2F;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
 }
 
 .reservation-form button {
-    margin-top: 10px;
+    height: 70px;
+    margin-top: 30px;
     padding: 16px;
     background-color: #462800;
     color: white;
     border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 600;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .reservation-form button:hover {
     background-color: rgb(90, 39, 0);
     cursor: pointer;
+}
+
+.success-msg {
+    margin-top: 30px;
+    color: #462800;
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.reservation-form .form-logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-form .form-logo img {
+    width: 100%;
+    max-width: 380px;
 }
 
 @media (max-width: 990px) {
@@ -591,6 +620,15 @@ footer {
 
     .banner-slogan p { 
         font-size: 15px; 
+    }
+
+    .reservation-form form {
+        width: 100%;
+        padding: 40px; 
+    }
+
+    .reservation-form .form-logo {
+        display: none;
     }
 }
 
@@ -728,5 +766,56 @@ footer {
     .banner-slogan p { 
         font-size: 12px; 
         padding: 0 15px; 
+    }
+
+    .reservation-form {
+        padding: 30px 4vw;
+    }
+
+    .reservation-form form {
+        width: 100%;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .reservation-form hr {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    .reservation-form label {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .reservation-form input,
+    .reservation-form select {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .reservation-form button {
+        height: 50px;
+        font-size: 15px;
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+    
+    .reservation-form h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .success-msg {
+        font-size: 20px;
+    }
+
+    .error-msg {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .reservation-form .form-logo {
+        display: none;
     }
 }
