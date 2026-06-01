@@ -52,32 +52,32 @@
                     <hr>
                     <label for="first-name">
                         First Name:
-                        <input type="text" placeholder="Your name" name="first-name" required>
+                        <input type="text" placeholder="Your name" name="first-name" id="first-name" required>
                         <div class="error-msg" id="first-name-error"></div>
                     </label>
                     <label for="last-name">
                         Last Name:
-                        <input type="text" placeholder="Your surname" name="last-name" required>
+                        <input type="text" placeholder="Your surname" name="last-name" id="last-name" required>
                         <div class="error-msg" id="last-name-error"></div>
                     </label>
                     <label for="phone">
                         Phone Number:
-                        <input type="tel" placeholder="+994 XX XXX XX XX" name="phone" required>
+                        <input type="tel" placeholder="+994 XX XXX XX XX" name="phone" id="phone" required>
                         <div class="error-msg" id="phone-error"></div>
                     </label>
                     <label for="reserve-date">
                         Date:
-                        <input type="date" name="reserve-date" required>
+                        <input type="date" name="reserve-date" id="reserve-date" required>
                         <div class="error-msg" id="date-error"></div>
                     </label>
                     <label for="reserve-time">
                         Time:
-                        <input type="time" name="reserve-time" required>
-                        <div class="error-msg" id="date-error"></div>
+                        <input type="time" name="reserve-time" id="reserve-time" required>
+                        <div class="error-msg" id="time-error"></div>
                     </label>
                     <label for="table">
                         Table:
-                        <select name="table">
+                        <select name="table" id="table" required>
                             <option value="select" disabled selected>Select table</option>
                             <option value="1">Table №1</option>
                             <option value="2">Table №2</option>
@@ -86,18 +86,21 @@
                             <option value="5">Table №5</option>
                             <option value="6">Table №6</option>
                         </select>
+                        <div class="error-msg" id="table-error"></div>
                     </label>
                     <label for="guest">
                         Guests:
-                        <select name="guest" required>
+                        <select name="guest" id="guest" required>
                             <option value="select" disabled selected>Select person count</option>
                             <option value="1">1 Person</option>
                             <option value="2">2 People</option>
                             <option value="3">3 People</option>
                             <option value="4">4 People</option>
                         </select>
+                        <div class="error-msg" id="guest-error"></div>
                     </label>
-                    <button type="submit">CONFIRM</button>
+                    <button type="submit" id="confirm-btn">CONFIRM RESERVATION</button>
+                    <div class="success-msg"></div>
                 </form>
             </section>
         </main>
