@@ -120,6 +120,7 @@ confirmButton.addEventListener("click", (event) => {
 
     const regex1 = /[^a-zA-ZÇçƏəĞğIıİiÖöŞşÜü\s]/;
     const regex2 = /^\s*$/;
+    const phoneRegex = /^(\+994|0)[\s\-]*([1-9]\d)[\s\-]*\d{3}[\s\-]*\d{2}[\s\-]*\d{2}$/;
     let isValid = true;
 
     if (regex2.test(firstName.value)) {
@@ -141,7 +142,7 @@ confirmButton.addEventListener("click", (event) => {
     if (regex2.test(phone.value)) {
         phoneError.innerText = "Phone number field cannot be empty!";
         isValid = false;
-    } else if (!phone.value.startsWith("0") && !phone.value.startsWith("+")) {
+    } else if (!phoneRegex.test(phone.value)) {
         phoneError.innerText = "Incorrect phone number format!";
         isValid = false;
     }

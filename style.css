@@ -250,7 +250,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 40px; 
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .story-content {
@@ -458,6 +458,7 @@ footer {
     font-size: 14px;
     font-weight: 600;
     margin-top: 5px;
+    margin-left: 5px;
 }
 
 .reservation-form button {
@@ -610,10 +611,6 @@ footer {
         margin-bottom: 12px; 
     }
 
-    .banner-slogan {
-        top: -17%;
-    }
-
     .banner-slogan h1 { 
         font-size: 37px; 
     }
@@ -755,10 +752,6 @@ footer {
         justify-content: center; 
     }
 
-    .banner-slogan {
-        top: -25%;
-    }
-
     .banner-slogan h1 { 
         font-size: 25px; 
     }
@@ -812,7 +805,6 @@ footer {
 
     .error-msg {
         font-size: 12px;
-        margin-left: 5px;
     }
 
     .reservation-form .form-logo {
