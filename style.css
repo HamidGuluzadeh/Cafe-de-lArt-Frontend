@@ -143,7 +143,7 @@ header {
 
 .foods .title, .signature-foods .title {
     color: rgb(90, 39, 0);
-    font-size: 50px;
+    font-size: 65px;
     font-weight: 800;
 }
 
@@ -152,6 +152,14 @@ header {
     font-size: 20px;
     font-weight: 500;
     margin-top: 5px;
+}
+
+.food-menu .title, .food-menu .subtitle {
+    text-align: center;
+}
+
+.food-menu .category-title {
+    font-size: 30px;
 }
 
 .foods .cards, .signature-foods .cards {
