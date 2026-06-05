@@ -16,6 +16,11 @@ const confirmButton = document.querySelector("#confirm-btn");
 const successMessage = document.querySelector(".success-msg");
 const errorMessages = document.querySelectorAll(".error-msg");
 
+if (reserveDate) {
+    const today = new Date().toISOString().split('T')[0];
+    reserveDate.setAttribute('min', today);
+}
+
 if (confirmButton) {
     confirmButton.addEventListener("click", (event) => {
         event.preventDefault();
@@ -25,6 +30,9 @@ if (confirmButton) {
         errorMessages.forEach((message) => {
             message.innerText = "";
         });
+
+        const currentDate = new Date();
+        const today = currentDate.toISOString().split('T')[0];
 
         const regex1 = /[^a-zA-ZÇçƏəĞğIıİiÖöŞşÜü\s]/;
         const regex2 = /^\s*$/;
@@ -63,6 +71,22 @@ if (confirmButton) {
         if (regex2.test(reserveTime.value)) {
             reserveTimeError.innerText = "Reservation time is not selected!";
             isValid = false;
+        } else {
+            const timeValue = reserveTime.value;
+            const selectedParts = timeValue.split(":");
+            const selectedMinutesTotal = parseInt(selectedParts[0]) * 60 + parseInt(selectedParts[1]);
+
+            if (timeValue < "09:00" || timeValue > "21:00") {
+                reserveTimeError.innerText = "Reservation hours are between 09:00 and 21:00!";
+                isValid = false;
+            } else if (reserveDate.value == today) {
+                const minMinutesTotal = currentDate.getHours() * 60 + currentDate.getMinutes() + 60;
+
+                if (selectedMinutesTotal < minMinutesTotal) {
+                    reserveTimeError.innerText = "Reservations must be made at least 1 hour in advance!";
+                    isValid = false;
+                }
+            }
         }
         
         if (table.value == "select") {
