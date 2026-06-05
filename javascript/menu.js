@@ -29,13 +29,13 @@ if (foodsArea) {
 
         hotDrinksData.forEach((item) => {
             const premiumBadge = item.premium ? 
-            `<img src="../icons/premium-icon.png" alt="Premium Badge" class="premium-icon">` : '';
+            `<img src="./icons/premium-icon.png" alt="Premium Badge" class="premium-icon">` : '';
 
             hotDrinkCards.innerHTML += 
             `<div class="card">
                 <div class="item-img">
                     ${premiumBadge}
-                    <img src="../images/${item.image}" alt="${item.name}" class="main-img">
+                    <img src="./images/${item.image}" alt="${item.name}" class="main-img">
                 </div>
                 <div class="item-details">
                     <h3>${item.name}</h3>
@@ -47,13 +47,13 @@ if (foodsArea) {
 
         dessertsData.forEach((item) => {
             const premiumBadge = item.premium ? 
-            `<img src="../icons/premium-icon.png" alt="Premium Badge" class="premium-icon">` : '';
+            `<img src="./icons/premium-icon.png" alt="Premium Badge" class="premium-icon">` : '';
 
             dessertCards.innerHTML += 
             `<div class="card">
                 <div class="item-img">
                     ${premiumBadge}
-                    <img src="../images/${item.image}" alt="${item.name}" class="main-img">
+                    <img src="./images/${item.image}" alt="${item.name}" class="main-img">
                 </div>
                 <div class="item-details">
                     <h3>${item.name}</h3>
