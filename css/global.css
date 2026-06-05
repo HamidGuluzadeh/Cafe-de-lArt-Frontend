@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    padding: 15px 5vw;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 2px solid rgb(63, 40, 3);
+}
+
+#logo {
+    width: 20vw;
+    min-width: 220px;
+    max-width: 350px;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 3px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu .btn {
+    background: none;
+    border: none;
+    width: 30px;
+    font-size: 18px;
+    margin-top: 0;
+    color: rgb(63, 40, 3);
+    cursor: pointer;
+}
+
+.menu .btn:hover {
+    color: rgb(130, 84, 9);
+}
+
+.login-btn {
+    width: 125px;
+    height: 40px;
+    background-color: #462800;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login-btn:hover {
+    background-color: rgb(90, 39, 0);
+    cursor: pointer;
+}
+
+.offline {
+    width: 100%;
+    background-color: rgb(251, 179, 45);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    border-top: 3px solid black;
+    border-bottom: 4px solid black;
+    position: fixed;
+    top: 90px;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.banner-img {
+    width: 100%;
+    position: relative;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.banner-slogan {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-slogan h1 {
+    font-size: 65px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.banner-slogan p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.foods, .signature-foods {
+    padding: 60px 5vw;
+    margin-top: 10px;
+}
+
+.foods .title, .signature-foods .title {
+    color: rgb(90, 39, 0);
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.foods .subtitle, .signature-foods .subtitle {
+    color: rgb(44, 19, 0);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.foods .cards, .signature-foods .cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px 4%;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.foods .card, .signature-foods .card {
+    width: 30%;
+    background-color: #F4EBE1;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.foods .card:hover, .signature-foods .card:hover {
+    position: relative;
+    bottom: 10px;
+}
+
+.foods .item-img, .signature-foods .item-img {
+    position: relative;
+}
+
+.foods .main-img, .signature-foods .main-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.foods .premium-icon, .signature-foods .premium-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.foods .item-details, .signature-foods .item-details {
+    padding: 0 25px 30px 25px;
+}
+
+.foods .item-details h3, .signature-foods .item-details h3 {
+    color: #3E2723;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.foods .item-details p, .signature-foods .item-details p {
+    margin-top: 5px;
+    color: #5D4037;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.foods .item-details .price, .signature-foods .item-details .price {
+    margin-top: 25px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #A66D27;
+}
+
+footer {
+    padding: 60px 5vw;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid rgb(193, 191, 188);
+    padding-top: 20px;
+    margin-top: 60px;
+}
+
+.footer-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2vw 5vw 4vw 5vw;
+    max-width: 1400px;
+    margin: auto;
+    gap: 4vw;
+}
+
+.brand-area {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-img img {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 15px;
+}
+
+.brand-slogan p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(130, 84, 9);
+    font-style: italic;
+    padding-left: 5px;
+}
+
+.business-info {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: rgb(90, 39, 0);
+}
+
+.info p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4a3b32;
+}
+
+.business-info img {
+    width: 22px;
+    height: 22px;
+}
+
+.location, .phone, .email, .social {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.location p:hover, .phone p:hover, .email p:hover, .social p:hover {
+    color: #281910;
+    text-decoration: underline;
+}
+
+.opening-hours p {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 990px) {
+    header { 
+        padding: 15px 3vw; 
+    }
+
+    #logo { 
+        min-width: 160px; 
+        max-width: 200px; 
+    }
+
+    .menu { 
+        display: flex; 
+        gap: 40px; 
+    }
+
+    .menu .btn { 
+        font-size: 16px; 
+    }
+
+    .login-btn { 
+        width: 90px; 
+        font-size: 13px; 
+        height: 35px; 
+    }
+
+    .offline { 
+        height: 40px; 
+        font-size: 18px; 
+        border-top: 3px solid black; 
+        border-bottom: 4px solid black; 
+    }
+
+    .foods, .signature-foods, footer { 
+        padding: 40px 3vw; 
+    }
+
+    .foods .title, .signature-foods .title { 
+        font-size: 38px; 
+    }
+
+    .foods .subtitle, .signature-foods .subtitle { 
+        font-size: 18px; 
+    }
+
+    .foods .item-details, .signature-foods .item-details { 
+        padding: 15px; 
+    }
+
+    .foods .item-details h3, .signature-foods .item-details h3 { 
+        font-size: 18px; 
+    }
+
+    .foods .item-details p, .signature-foods .item-details p { 
+        font-size: 13px; 
+    }
+
+    .foods .item-details .price, .signature-foods .item-details .price { 
+        font-size: 22px; 
+        margin-top: 15px; 
+    }
+
+    .footer-area { 
+        padding: 30px 3vw; 
+    }
+
+    .brand-area { 
+        width: 30%; 
+    }
+
+    .business-info { 
+        width: 68%; 
+        gap: 1vw; 
+    }
+
+    .info h3 { 
+        font-size: 14px; 
+        margin-bottom: 15px; 
+    }
+
+    .info p, .brand-slogan p { 
+        font-size: 12px; 
+    }
+
+    .business-info img { 
+        width: 18px; 
+        height: 18px; 
+    }
+
+    .location, .phone, .email, .social { 
+        gap: 8px; 
+        margin-bottom: 12px; 
+    }
+
+    .banner-slogan h1 { 
+        font-size: 37px; 
+    }
+
+    .banner-slogan p { 
+        font-size: 15px; 
+    }
+}
+
+@media (max-width: 600px) {
+    header { 
+        position: sticky; 
+        top: 0; 
+        z-index: 1; 
+        width: 100%; 
+        max-width: 100%; 
+        padding: 75px 15px 15px 15px; 
+        display: flex; 
+        justify-content: center; 
+        background-color: white; 
+    }
+
+    #logo { 
+        position: absolute; 
+        top: 18px; 
+        left: 15px; 
+        width: 140px; 
+    }
+
+    .login-btn { 
+        position: absolute; 
+        top: 15px; 
+        right: 15px; 
+        width: 90px; 
+        height: 35px; 
+        font-size: 13px; 
+        margin: 0; 
+    }
+
+    .offline { 
+        height: 30px; 
+        font-size: 14px; 
+        border-top: 3px solid black; 
+        border-bottom: 3px solid black; 
+    }
+
+    .menu { 
+        width: 100%; 
+        max-width: 100%; 
+        box-sizing: border-box; 
+        display: flex; 
+        justify-content: center; 
+        gap: 6vw; 
+        position: static; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    .menu .btn { 
+        font-size: 15px; 
+        width: auto; 
+    }
+
+    .foods, .signature-foods, footer { 
+        padding: 30px 5vw; 
+    }
+
+    .foods .title, .signature-foods .title { 
+        font-size: 32px; 
+    }
+
+    .foods .subtitle, .signature-foods .subtitle { 
+        font-size: 15px; 
+    }
+
+    .foods .cards, .signature-foods .cards { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 30px; 
+    }
+
+    .foods .card, .signature-foods .card { 
+        width: 100%; 
+    }
+
+    .foods .main-img, .signature-foods .main-img { 
+        margin-bottom: 0; 
+    }
+
+    .footer-area { 
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 40px; 
+    }
+
+    .brand-area { 
+        width: 100%;
+        align-items: flex-start; 
+    }
+
+    .business-info { 
+        width: 100%; 
+        flex-direction: column; 
+        gap: 35px; 
+    }
+
+    .info { 
+        align-items: flex-start; 
+    }
+
+    .location, .phone, .email, .social { 
+        justify-content: center; 
+    }
+
+    .banner-slogan h1 { 
+        font-size: 25px;
+    }
+
+    .banner-slogan p { 
+        font-size: 12px; 
+        padding: 0 15px; 
+    }
+}

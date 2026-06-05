@@ -1,0 +1,25 @@
+.data-load {
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.food-menu .title, .food-menu .subtitle {
+    text-align: center;
+}
+
+.food-menu .category-title {
+    font-size: 30px;
+}
+
+.category-title {
+    color: rgb(90, 39, 0);
+    font-size: 37px;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
